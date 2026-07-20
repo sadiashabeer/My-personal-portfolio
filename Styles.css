@@ -1,0 +1,289 @@
+/* ========================= CSS RESET ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========================= HEADER ========================= */
+
+header {
+  background: linear-gradient(135deg, #750a74, #7c3aed);
+  color: #fff;
+  padding: 25px 8%;
+}
+
+/* ========================= NAVBAR ========================= */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd166;
+}
+
+#darkModeBtn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ========================= HERO ========================= */
+
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid white;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: white;
+  color: #2563eb;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ffd166;
+  transform: scale(1.05);
+}
+
+/* ========================= MAIN ========================= */
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 70px 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 35px;
+  color: #2563eb;
+}
+
+/* ========================= ABOUT ========================= */
+
+#about p {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ========================= SKILLS ========================= */
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.skill-card {
+  background: white;
+  width: 180px;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.skill-card i {
+  font-size: 50px;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ========================= PROJECTS ========================= */
+
+.project-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.project-card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ========================= API ========================= */
+
+#api {
+  text-align: center;
+}
+
+#joke {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ========================= FOOTER ========================= */
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ffd166;
+  text-decoration: none;
+}
+
+/* ========================= DARK MODE ========================= */
+
+body.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+body.dark-mode section h2 {
+  color: #ffd166;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card {
+  background: #1f1f1f;
+  color: white;
+}
+
+body.dark-mode footer {
+  background: #000;
+}
+
+body.dark-mode .btn {
+  background: #ffd166;
+  color: #111;
+}
+
+/* ========================= RESPONSIVE ========================= */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero img {
+    width: 150px;
+    height: 150px;
+  }
+  }
